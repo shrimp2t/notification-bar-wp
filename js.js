@@ -60,11 +60,14 @@ jQuery( document ).ready( function( $ ){
         });
         setTimeout( function(){
             nb.addClass( 'nbw-show' );
+            $( window ).trigger( 'resize' );
         }, 1000 );
         nb.on( 'click', '.nbw-close', function( e ) {
             e.preventDefault();
             NbwCookie.set( 'notification_bar_wp', 'hide', notification_bar_wp.c ); // set cookie 2 days
-            nb.slideUp( 500, function(){} );
+            nb.slideUp( 500, function(){
+                $( window ).trigger( 'resize' );
+            } );
         } );
     }
 

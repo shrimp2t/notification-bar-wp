@@ -52,16 +52,27 @@
 
     text-align: center;
 }
-
+.nbw-msg {
+    display: inline-block;
+}
 
 @media (max-width: 980px) {
-    #nbw-content {
-        padding: .8rem;
-    }
     .nbw-countdown {
-        display: block;
+        display: inline-block;
         margin-right: auto;
         margin-left: auto;
         margin-bottom: .5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nbw-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 360px) {
+    .nbw-countdown-tex {
+        display: block;
     }
 }

@@ -201,7 +201,7 @@ class  Notification_Bar_WP {
                                 <span class="nbw-countdown-tex"><?php echo $expires_text; ?></span>
                                 <span id="nbw-countdown-time"></span>
                             </div>
-                            <?php echo $text; ?>
+                            <div class="nbw-msg"><?php echo $text; ?></div>
                         </div>
                         <a href="#" class="nbw-close"><span class="ti-close"></span><span class="screen-reader-text"><?php esc_html_e( 'Close', 'notification_bar_wp' ); ?></span></a>
                     </div>
