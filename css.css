@@ -33,7 +33,6 @@
 }
 
 .nbw-countdown {
-    width: 200px;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -43,13 +42,14 @@
     line-height: 1.2;
 }
 #nbw-countdown-time {
-    display: block;
+    font-weight: bold;
 }
 .nbw-countdown-tex {
     text-transform: uppercase;
 }
 .nbw-text {
     vertical-align: middle;
+
     text-align: center;
 }
 
