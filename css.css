@@ -1,0 +1,52 @@
+#notification_bar_wp {
+    position: relative;
+    background: #2A76D2;
+    color: #ffffff;
+    overflow: hidden;
+    -webkit-transition: max-height 1.5s;
+    -moz-transition: max-height 1.5s;
+    -ms-transition: max-height 1.5s;
+    -o-transition: max-height 1.5s;
+    transition: max-height 1.5s;
+    max-height: 0;
+}
+#notification_bar_wp.nbw-show {
+    max-height: 300px;
+}
+#notification_bar_wp a {
+    color: #ffffff;
+    text-decoration: none;
+}
+#nbw-content {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+.nbw-close {
+    font-size: 1.4rem;
+}
+
+.nbw-icon {
+    font-size: 2rem;
+}
+
+.nbw-countdown {
+    width: 200px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    border: 2px solid #ffffff;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+}
+#nbw-countdown-time {
+    display: block;
+}
+.nbw-countdown-tex {
+    text-transform: uppercase;
+}
+.nbw-text {
+    vertical-align: middle;
+}
