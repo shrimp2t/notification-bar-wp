@@ -130,8 +130,7 @@ class  Notification_Bar_WP {
         );
 
         $wp_customize->add_setting( 'nbw_bg', array(
-            'priority' 			     => 6,
-            'default' 			     => '#ffffff',
+            'default' 			     => '',
             'sanitize_callback'		 => 'sanitize_hex_color_no_hash',
             'sanitize_js_callback'   => 'maybe_hash_hex_color'
         ) );
@@ -142,8 +141,7 @@ class  Notification_Bar_WP {
         ) ) );
 
         $wp_customize->add_setting( 'nbw_color', array(
-            'priority' 			     => 6,
-            'default' 			     => '#ffffff',
+            'default' 			     => '',
             'sanitize_callback'		 => 'sanitize_hex_color_no_hash',
             'sanitize_js_callback'   => 'maybe_hash_hex_color'
         ) );
